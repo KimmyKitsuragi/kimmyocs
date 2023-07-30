@@ -1426,6 +1426,11 @@ input[type="radio"]:focus + label:before {
     display: block;
     width: 100%;
     height: 100%; }
+  .image.chibi img {
+    border-radius: 8px;
+    display: block;
+    width: 50%;
+    height: 50%; }
   .image.left, .image.right {
     max-width: 40%; }
     .image.left img, .image.right img {
