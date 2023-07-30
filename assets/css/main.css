@@ -2068,6 +2068,9 @@ table.alt tbody tr td {
       padding-top: 10em; } }
 
 /* Main */
+:root {
+  scroll-behavior: auto !important; }
+
 #main {
   background-color: #ffffff;
   color: #636363;

@@ -5,6 +5,9 @@
 ///
 
 /* Main */
+:root {
+	scroll-behavior: auto !important;
+}
 
 	#main {
 		@include color(invert);
