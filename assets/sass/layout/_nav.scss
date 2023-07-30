@@ -24,7 +24,7 @@
 		text-align: center;
 
 		& + #main {
-			padding-top: 4.25em;
+			padding-top: 3.5em;
 		}
 
 		ul {
@@ -109,7 +109,8 @@
 			position: fixed;
 			top: 0;
 			padding: 1em 1em;
-			background-color: rgba(255, 255, 255, 0.75);
+			background-color: transparent;
+			background-image: linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,1) 25%);;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: _misc(z-index-base);

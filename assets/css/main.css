@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import "https://fonts.googleapis.com/css?family=Libre+Baskerville:300,700";
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -135,6 +136,7 @@ p {
     text-align: justify; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville";
   font-weight: 300;
   line-height: 1.5;
   margin: 0 0 0 0;
@@ -151,7 +153,8 @@ h2 {
   font-size: 1.5rem; }
 
 h3 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  font-weight: 400 !important; }
 
 h4 {
   font-size: 1.1em; }
@@ -1980,7 +1983,7 @@ table.alt tbody tr td {
   #nav hr {
     border-bottom-color: #dddddd; }
   #nav + #main {
-    padding-top: 4.25em; }
+    padding-top: 3.5em; }
   #nav ul {
     margin: 0;
     padding: 0;
@@ -2051,7 +2054,8 @@ table.alt tbody tr td {
     position: fixed;
     top: 0;
     padding: 1em 1em;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white 25%);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     z-index: 10000; }
@@ -2220,7 +2224,7 @@ table.alt tbody tr td {
   #main .spotlight .image {
     border-color: #dddddd; }
   #main > .main {
-    padding: 5em 5em 3em 5em ; }
+    padding: 4em 5em 2em 5em ; }
     #main > .main:first-child {
       border-top: 0; }
     #main > .main > .image.main:first-child {
@@ -2237,7 +2241,7 @@ table.alt tbody tr td {
         border-bottom-left-radius: 0; }
   @media screen and (max-width: 1280px) {
     #main > .main {
-      padding: 4em 4em 2em 4em ; }
+      padding: 3.5em 3.5em 1.5em 3.5em ; }
       #main > .main > .image.main:first-child {
         margin: -4em 0 4em -4em;
         width: calc(100% + 8em); } }
@@ -2273,6 +2277,8 @@ table.alt tbody tr td {
 
 /* Footer */
 #footer {
+  background-color: #ffffff;
+  color: #636363;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2284,6 +2290,157 @@ table.alt tbody tr td {
   padding: 5em 5em 3em 5em ;
   width: calc(100% + 2em);
   margin: 0 0 3em -2em; }
+  #footer input, #footer select, #footer textarea {
+    color: #636363; }
+  #footer a:hover {
+    color: #636363; }
+  #footer strong, #footer b {
+    color: #636363; }
+  #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    color: #636363; }
+  #footer blockquote {
+    border-left-color: #dddddd; }
+  #footer code {
+    background: rgba(222, 222, 222, 0.25);
+    border-color: #dddddd; }
+  #footer hr {
+    border-bottom-color: #dddddd; }
+  #footer .box {
+    border-color: #dddddd; }
+  #footer input[type="submit"],
+  #footer input[type="reset"],
+  #footer input[type="button"],
+  #footer button,
+  #footer .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #dddddd;
+    color: #636363 !important; }
+    #footer input[type="submit"]:hover,
+    #footer input[type="reset"]:hover,
+    #footer input[type="button"]:hover,
+    #footer button:hover,
+    #footer .button:hover {
+      background-color: rgba(222, 222, 222, 0.25); }
+    #footer input[type="submit"]:active,
+    #footer input[type="reset"]:active,
+    #footer input[type="button"]:active,
+    #footer button:active,
+    #footer .button:active {
+      background-color: rgba(222, 222, 222, 0.5); }
+    #footer input[type="submit"].icon:before,
+    #footer input[type="reset"].icon:before,
+    #footer input[type="button"].icon:before,
+    #footer button.icon:before,
+    #footer .button.icon:before {
+      color: rgba(99, 99, 99, 0.25); }
+    #footer input[type="submit"].primary,
+    #footer input[type="reset"].primary,
+    #footer input[type="button"].primary,
+    #footer button.primary,
+    #footer .button.primary {
+      background-color: #8cc9f0;
+      color: #ffffff !important;
+      box-shadow: none; }
+      #footer input[type="submit"].primary:hover,
+      #footer input[type="reset"].primary:hover,
+      #footer input[type="button"].primary:hover,
+      #footer button.primary:hover,
+      #footer .button.primary:hover {
+        background-color: #9acff2; }
+      #footer input[type="submit"].primary:active,
+      #footer input[type="reset"].primary:active,
+      #footer input[type="button"].primary:active,
+      #footer button.primary:active,
+      #footer .button.primary:active {
+        background-color: #7ec3ee; }
+      #footer input[type="submit"].primary.icon:before,
+      #footer input[type="reset"].primary.icon:before,
+      #footer input[type="button"].primary.icon:before,
+      #footer button.primary.icon:before,
+      #footer .button.primary.icon:before {
+        color: #ffffff !important; }
+  #footer label {
+    color: #636363; }
+  #footer input[type="text"],
+  #footer input[type="password"],
+  #footer input[type="email"],
+  #footer select,
+  #footer textarea {
+    background-color: rgba(222, 222, 222, 0.25);
+    border-color: #dddddd; }
+    #footer input[type="text"]:focus,
+    #footer input[type="password"]:focus,
+    #footer input[type="email"]:focus,
+    #footer select:focus,
+    #footer textarea:focus {
+      border-color: #8cc9f0;
+      box-shadow: 0 0 0 1px #8cc9f0; }
+  #footer select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E"); }
+    #footer select option {
+      color: #636363;
+      background: #ffffff; }
+  #footer input[type="checkbox"] + label,
+  #footer input[type="radio"] + label {
+    color: #636363; }
+    #footer input[type="checkbox"] + label:before,
+    #footer input[type="radio"] + label:before {
+      background: rgba(222, 222, 222, 0.25);
+      border-color: #dddddd; }
+  #footer input[type="checkbox"]:checked + label:before,
+  #footer input[type="radio"]:checked + label:before {
+    background-color: #636363;
+    border-color: #636363;
+    color: #ffffff; }
+  #footer input[type="checkbox"]:focus + label:before,
+  #footer input[type="radio"]:focus + label:before {
+    border-color: #8cc9f0;
+    box-shadow: 0 0 0 1px #8cc9f0; }
+  #footer ::-webkit-input-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important; }
+  #footer :-moz-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important; }
+  #footer ::-moz-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important; }
+  #footer :-ms-input-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important; }
+  #footer .formerize-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important; }
+  #footer .icon.major {
+    border-color: #dddddd; }
+    #footer .icon.major:before {
+      border-color: #dddddd; }
+  #footer .icon.alt {
+    border-color: #dddddd;
+    color: #636363; }
+    #footer .icon.alt:hover {
+      background-color: rgba(222, 222, 222, 0.25); }
+    #footer .icon.alt:active {
+      background-color: rgba(222, 222, 222, 0.5); }
+  #footer ul.alt li {
+    border-top-color: #dddddd; }
+  #footer dl dt {
+    color: #636363; }
+  #footer header.major h3:after {
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0); }
+  #footer table tbody tr {
+    border-color: #dddddd; }
+    #footer table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(222, 222, 222, 0.25); }
+  #footer table th {
+    color: #636363; }
+  #footer table thead {
+    border-bottom-color: #dddddd; }
+  #footer table tfoot {
+    border-top-color: #dddddd; }
+  #footer table.alt tbody tr td {
+    border-color: #dddddd; }
+  #footer .spotlight .image {
+    border-color: #dddddd; }
   #footer > * {
     width: calc(50% - 2em);
     margin-left: 2em; }
